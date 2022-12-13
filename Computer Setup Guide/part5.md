@@ -1,4 +1,4 @@
-
+# Part 5
 # Postgres Database Installation guide:
 - Postgres is an SQL (Relational) Database, we are going to use it during your course, please follow the installation steps carfully
 
@@ -23,6 +23,7 @@ pg_ctl -D /home/linuxbrew/.linuxbrew/var/postgres start
 echo 'alias sqlstart="pg_ctl -D /home/linuxbrew/.linuxbrew/var/postgres start"' >> ~/.profile
 echo 'alias sqlstop="pg_ctl -D /home/linuxbrew/.linuxbrew/var/postgres stop"' >> ~/.profile
 ```
+`close Ubuntu and run it again`
 
 - now you can easily start the server using this short command <br>
 ``` sqlstart```  >>> this command will start the server <br>
@@ -61,10 +62,15 @@ psql
 
 - You should see something similar to the following:
 ```
-psql (13.3)
+psql (14.2) // or higher version
 Type "help" for help.
 yournamehere=#
 Type \q to exit the postgres client application and return to your bash shell.
 ```
 
- 
+<hr>
+<h2 align="center"> THE END </h2>
+<hr>
+
+<h2 align="center"><a href="part1.md">PART 1</a> | <a href="part2.md">PART 2</a> | <a href="part3.md">PART 3</a></h2> | <a href="part4.md">PART 4</a></h2>
+

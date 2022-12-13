@@ -29,48 +29,60 @@
 * `Virtual Machine Platform`
 * `Windows Hypervisor Platform`
 * `Windows Subsystem for Linux`
-* `Hyper-V`
+* `Hyper-V` (if exist)
 
 ### Not important ( just in case ):
 #### if you want to run ubuntu inside a virtual machine ( virtualbox, vmware, etc ) then you need to enable extra service:
 * `Containers`
 
 
-
 - once you enabled the services click ok and then you are required to RESTART your machine in order to take effect.
 
 ### Note:
-- sometimes the virtual machine service is DISABLED from your machine, if so, go to your windows search bar, search for cmd.exe and run it as adminstrator and run this command:
+- sometimes the virtual machine service is DISABLED from your machine, if so, go to your windows search bar, search for `cmd.exe` and run it as adminstrator and run this command:
 ```
 Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform
 ```
+<hr>
+
 - RESTART your machine if prompted, it should work for you ( if it does SKIP this part below and start from PowerShell )
 - if it didn't work, this means that you need to enable Virtualization (VT-x) in Bios, please note this might be differnt from machine to machine but it's the same proccess
-1) Reboot your machine and Press the BIOS Key several times to boot. ...
+1) Reboot your machine and Press the BIOS Key, try `DEL or F9 or F1 or F2 or or F12 or ESC` several times to boot, OR you can simply search in google "how to boot into BIOS `put your laptop brand name`" and search.
 2) Search for the section for CPU configuration Or it could be inside Advanced configurations.
 3) Find the Settings for Virtualization or VT-x and hit enter and Change it from DISABLED to ENABLED
-4) Exit Your BIOS by pressing F10 and say yes and your machine should be restarted now.
+4) Exit Your BIOS by pressing F10 and say yes and your machine should be restarted now. `ALL DONE`
+ #### Note:
 - You can also refer to this vedio for more information about how to enable Virtualization in BIOS <a href="https://www.youtube.com/watch?v=MOuTxfzCvMY">LINK</a>
 
 
 <hr>
+ 
+# important!!!
+ 
+### Now we need to run several commands using PowerShell because sometimes the virtual machine service is DISABLED by default.
+- search for `PowerShell` from windows search bar and open `PowerShell.exe` and run it `as Adminstartor` then run the following commands:
 
-### Now we need to run several commands using PowerShell 
-- search for `PowerShell` from windows search bar and open `PowerShell.exe` and run the following commands:
+```
+Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform
+```
+
+then run
 ```
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 ```
-then
+then run
 ```
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
 - this will enable Virtual Machine Platform for WSL, if it ask for a restart then restart your machine to continue
+
 ---------------------------------------------
 ### Now you need to install windows subsytem Linux ( used to run the Linux environment on windows )
 <h3 align="center">  click on the icon below to download it directly</h3>
 <p align="center"> <kbd><a href="https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi"> <img height="250px" width="250px" src="images/subsystemLinux.png" alt="WinsubsystemLinux"></a></kbd>
 <h3 align="center">windows subsystem linux</h3>
 <br>
+
 - after it finishes downloading, open the downloaded file `wsl_update_x64.exe` and follow the setup instructions
 
 ---------------------------------------------
@@ -87,12 +99,7 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 ```
 wsl --set-default-version 2
 ```
-- Now you need to check the WSL version, run the following command in Terminal:
-```
-wsl -l -v 
-``` 
-- if you see output like this image then you are good to go
-&nbsp; &nbsp; &nbsp; &nbsp; <kbd>![wslLV](images/wslLV.jpg)</kbd>
+- you should get this result `For information on key differences with WSL 2 please visit https://aka.ms/wsl2`
 
 <hr>
 
@@ -114,8 +121,17 @@ wsl -l -v
 ### Be Carefull about the next step:
 - it will ask you to enter a new username: for example "student"
 - please note that the password is hidden, so make sure you are setting your password correctly.
-- set your password twice to verify it: ( make sure to memorize it ) `hint: use 123456 or 0000`
+- set your password twice to verify it: ( make sure to memorize it ) `hint: use 1234 or 0000`
 <br>
+
+- open `Windows Terminal` and run this command ( this to check UBUNTU if it's running with WSL version 2 )
+```
+wsl -l -v 
+``` 
+- if you see output like this image then you are good to go
+&nbsp; &nbsp; &nbsp; &nbsp; <kbd>![wslLV](images/wslLV.jpg)</kbd>
+
+<hr>
 
 ## Now we need to update ubuntu profile and create a backup for some files:
 
@@ -123,18 +139,12 @@ wsl -l -v
 ```
 mv ~/.bashrc .bashrc.bak
 ```
-```
-mv ~/.bash_profile .bash_profile.bak
-```
                                                                 
 ```
 mv ~/.profile .profile.bak
 ```
-```
-mv ~/.zshrc .zshrc.bak
-```
 
-- if you get "No such file or directory" error for some of them. don't worry it's NORMAL
+- you should not get any output ( it's just for backup .profile & .bashrc)
 
 <hr>
                                         
@@ -144,7 +154,8 @@ curl -s https://raw.githubusercontent.com/omarXzain/LTUC-ASAC/main/.profile >> ~
 ```
 
 - Once it finishes, `COMPLETLY CLOSE UBUNTU` then re-open it again. 
-- Your terminal appearance should be changed to a different set of colors and cool features
+- Your Ubuntu appearance should be changed to a different set of colors and cool features
+&nbsp;&nbsp;<kbd>![wslLV](images/newubuntu.png)</kbd>
 
 <hr>
 
@@ -169,7 +180,7 @@ source ~/.profile
 sudo apt-get update
 ```
 - put your password, when prompted ( because we are using sudo )
-- once it's done, run this command: ( it will take up to ~ <img height="40px" width="30px" src="images/Time.png" alt="update your windows now"> 13 mins )
+- once it's done, run this command: ( it will take up to ~ <img height="40px" width="30px" src="images/Time.png" alt="sudo apt-get upgrade"> 13 mins )
 ```
 sudo apt-get upgrade
 ```

@@ -25,7 +25,7 @@ nvm ls
 node --version
 ```
 - the output should be only the node version 
-- in our case it's `v14.17.3` ( it's ok if you get higher version )
+- in our case it's `v16.13.1` ( it's ok if you get higher version )
 
 <hr>
 
@@ -38,11 +38,11 @@ node --version
 ```
 brew install git || brew upgrade git
 ```
-## Now we need to configure the settings and connect you github account with your machine
+## Now we need to configure the settings and connect your github account with your machine
 
 ### Setup GitHub for "Authentication"
 
-- first, make sure that you already have a github account, if not then create one from here <a href="https://github.com/signup?source=login">GITHUB.com</a>
+- first, `make sure that you already have a github account` if not then create one from this link <a href="https://github.com/signup?source=login">GITHUB.com</a> and verify it from your email ..... ( choose a unique username )
 
 - install CLI ( Command line interface ) by completing the following steps from `UBUNTU`: ( it will take up to ~ <img height="40px" width="30px" src="images/Time.png" alt=""> 4 mins)
 ```
@@ -92,6 +92,9 @@ git config --global core.editor "code --wait"
 ```
 git config --global init.defaultbranch main
 ```
+```
+git config --global push.default current
+```
 
 - let's make sure that all the settings are correct by running this command:
 ```
@@ -102,6 +105,7 @@ git config --list
 user.name=yourusername
 user.email=youremail@anymail.com
 core.editor=code --wait
+init.defaultbranch=main
 ```
 <h2 align="center"> All DONE 😀 </h2>
 

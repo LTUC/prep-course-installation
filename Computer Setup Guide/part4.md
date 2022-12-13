@@ -9,7 +9,8 @@
 <h3 align="center">Visual studio code</h3>
 
 <hr>
-- run the downloaded file `VSCodeUserSetup-x64.exe` and don't forget to check the boxex ( check the image below ) 
+
+- run the downloaded file `VSCodeUserSetup-x64.exe` and don't forget to check the boxes ( check the image below ) 
 
 <br> <p align="center"><kbd> <img height="400px" width="480px" src="images/vscode.png" alt=""></kbd> </p>
 
@@ -27,25 +28,45 @@ then
 code .
 ```
 - when you hit `code .` you should see downloading... then your `VSCode` should be opened inside your current directory
-- Note: if you see a `TRUST PROJECT` message please always click trust.
+- Note: if you see a `TRUST PROJECT` message please click trust and check the always trust box.
 
 <hr>
 
 # usefull extension for Visual studio code:
 - please install the following VSCode extensions.
-- `Remote WSL` ( only for windows users - needed for the wsl enviroment)
+- `Remote WSL` ( only for windows users - needed for the wsl environment and to enable code . command from ubuntu )
 - `liveserver` ( used to create a live server for your project and check the project chenges )
 - `ESLint` ( Eslint is a visual studio code extension for identifying and reporting on patterns and errors found in you code )
-- `markdownlint` (extend and enhance Visual Studio Code's built-in Markdown preview)
+- `markdownlint` ( extend and enhance Visual Studio Code's built-in Markdown preview )
 
 ## How to install VSCODE extensions ( check the image below )
 - Click on the extensions icon from the left side and search for the mentioned extentions above and install them.
 <br> <p align="center"> <kbd> <img height="400px" width="480px" src="images/extensions.png" alt=""></kbd></p>
 
-<hr>
-<h2 align="center"> THE END </h2>
-<hr>
-<h2 align="center"><a href="part1.md">PART 1</a> | <a href="part2.md">PART 2</a> | <a href="part3.md">PART 3</a></h2>
+### Finally, let's make sure that everything is done as it should be:
+- run the following commands
+```
+code --version
+```
+- you should get a result similar to this 
+`1.63.2
+899d4837hc95423fb7e10jnskjd52050e30ba3
+x64`
+- let's check the node version
+```
+node --version
+```
+- you should get a result like this `v16.13.1` or higher
+- let's check the NPM version 
+```
+npm --version
+```
+- you should get a result like this `8.1.2` or higher
+- let's check the git version
+```
+git --version
+```
+- you should get a result like this `git version 2.32.0` or higher
 
-<h2 align="center"><a href="installation%20tutorial.md">Main Page</a></a></h2>
+<a href="part3.md">Previous Page</a> | <a href="part5.md">PART 5 (Postgres)</a>
 
