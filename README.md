@@ -14,7 +14,7 @@
 
 <hr>
 
-<p align="center"> <a href="Computer Setup Guide/part1.md"><kbd><img height="150px" width="150px" src="images/win10.png" alt=""></a> </kbd> &nbsp; &nbsp; &nbsp; &nbsp; <a href="https://ayyoubk.github.io/setup-development-environment/"> <kbd> <img height="150px" width="150px" src="images/linux.png" alt=""></kbd></a></p>
+<p align="center"> <a href="Computer Setup Guide/part1.md"><kbd><img height="150px" width="150px" src="Computer Setup Guide/images/win10.png" alt=""></a> </kbd> &nbsp; &nbsp; &nbsp; &nbsp; <a href="https://omarxzain.github.io/Linux-Prep-Guide/"> <kbd> <img height="150px" width="150px" src="Computer Setup Guide/images/linux.png" alt=""></kbd></a></p>
 
 <hr>
 <h2></h2>
