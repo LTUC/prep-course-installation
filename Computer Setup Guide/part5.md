@@ -20,8 +20,8 @@ pg_ctl -D /home/linuxbrew/.linuxbrew/var/postgresql@14 start
 - we can use a shortcut command that will make the proccess easier for you by creating an allias.
 
 ``` 
-echo 'alias sqlstart="pg_ctl -D /home/linuxbrew/.linuxbrew/var/postgres start"' >> ~/.profile
-echo 'alias sqlstop="pg_ctl -D /home/linuxbrew/.linuxbrew/var/postgres stop"' >> ~/.profile
+echo 'alias sqlstart="pg_ctl -D /home/linuxbrew/.linuxbrew/var/postgresql@14 start"' >> ~/.profile
+echo 'alias sqlstop="pg_ctl -D /home/linuxbrew/.linuxbrew/var/postgresql@14 stop"' >> ~/.profile
 ```
 `close Ubuntu and run it again`
 
