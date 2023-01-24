@@ -12,7 +12,7 @@ brew install postgresql
 - it will take some time to complete ( about 6 mins )
 - Once it does, then you can start the server using this command <br>
 ```
-pg_ctl -D /home/linuxbrew/.linuxbrew/var/postgres start
+pg_ctl -D /home/linuxbrew/.linuxbrew/var/postgresql@14 start
 ```
 - now you should see server started meassage and you can work 
 ![]()
