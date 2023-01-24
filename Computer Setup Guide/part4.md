@@ -49,24 +49,24 @@ code .
 code --version
 ```
 - you should get a result similar to this 
-`1.63.2
+`1.74.3
 899d4837hc95423fb7e10jnskjd52050e30ba3
 x64`
 - let's check the node version
 ```
 node --version
 ```
-- you should get a result like this `v16.13.1` or higher
+- you should get a result like this `v18.13.0` or higher
 - let's check the NPM version 
 ```
 npm --version
 ```
-- you should get a result like this `8.1.2` or higher
+- you should get a result like this `8.19.3` or higher
 - let's check the git version
 ```
 git --version
 ```
-- you should get a result like this `git version 2.32.0` or higher
+- you should get a result like this `git version 2.39.1` or higher
 
 <a href="part3.md">Previous Page</a> | <a href="part5.md">PART 5 (Postgres)</a>
 
