@@ -17,7 +17,7 @@ nvm install --lts
 ```
 nvm ls
 ```
-- you should see a result similar to this ( v14.17.3 or higher! )
+- you should see a result similar to this ( v18.13.0 or higher! )
 <br> <br> <p align="center"><kbd>![](images/nodeCheck.jpg)</kbd></p>
 
 - let's double check the node version by running this command:
@@ -25,7 +25,7 @@ nvm ls
 node --version
 ```
 - the output should be only the node version 
-- in our case it's `v16.13.1` ( it's ok if you get higher version )
+- in our case it's `v18.13.0` ( it's ok if you get higher version )
 
 <hr>
 
