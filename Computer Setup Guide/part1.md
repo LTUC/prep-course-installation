@@ -137,7 +137,7 @@ wsl -l -v
 
 ## Now we need to update ubuntu profile and create a backup for some files:
 
-### run these commands line by line:
+### run these commands line by line in `Ubuntu`:
 ```
 mv ~/.bashrc .bashrc.bak
 ```
@@ -150,7 +150,7 @@ mv ~/.profile .profile.bak
 
 <hr>
                                         
-- Now run this command in Ubuntu
+- Now run this command in `Ubuntu`
 ```
 curl -s https://raw.githubusercontent.com/omarXzain/LTUC-ASAC/main/.profile >> ~/.profile
 ```
