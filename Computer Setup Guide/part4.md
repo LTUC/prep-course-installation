@@ -35,7 +35,7 @@ code .
 # usefull extension for Visual studio code:
 - please install the following VSCode extensions.
 - `WSL` ( only for windows users - needed for the wsl environment and to enable code . command from ubuntu )
-- `liveserver` ( used to create a live server for your project and check the project chenges )
+- `liveserver` ( used to create a live server for your project and check the project changes )
 - `ESLint` ( Eslint is a visual studio code extension for identifying and reporting on patterns and errors found in you code )
 - `markdownlint` ( extend and enhance Visual Studio Code's built-in Markdown preview )
 
