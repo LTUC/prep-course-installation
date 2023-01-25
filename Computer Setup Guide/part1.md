@@ -112,7 +112,7 @@ wsl --set-default-version 2
 
 <hr>
 
-- If you are not able to install Ubuntu from the store for some reason then open `cmd.exe` and run this command: `wsl.exe --install -d Ubuntu`
+- ONLY! If you are not able to install Ubuntu from the store then open `cmd.exe` and run this command: `wsl.exe --install -d Ubuntu`
 
 ## Now follow these instructions:
 
