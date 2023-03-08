@@ -73,7 +73,7 @@ On Linux, postgres can be setup to automatically start when your system reboots,
 
 ---
 
-## Mac Users
+## ONLY FOR Mac Users
 
 On Mac, we start the postgres server in such a way as to have it run right away, and also re-start itself whenever you restart your computer.
 
