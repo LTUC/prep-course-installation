@@ -3,8 +3,8 @@
 
 ## Part 1
 
+- if you have windows 11 then skip the update part and go directly to `Windows features`
 ### Please follow the instructions line by line carfully:
-
 - before we start the installation part please make sure that you have the latest update for windows 10 in order to make the WSL enviroment to work
 - go to your windows search bar and type `system information` to check your OS details and <b> hit ENTER </b>
 - look at the Version number as you can see in the image below
