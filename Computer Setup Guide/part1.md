@@ -38,11 +38,6 @@
 
 - once you enabled the services click ok and then you are required to RESTART your machine in order to take effect.
 
-### Note:
-- sometimes the virtual machine service is DISABLED from your machine, if so, go to your windows search bar, search for `cmd.exe` and run it as adminstrator and run this command:
-```
-Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform
-```
 <hr>
 
 - RESTART your machine if prompted, it should work for you ( if it does SKIP this part below and start from PowerShell )
