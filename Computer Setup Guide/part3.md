@@ -76,7 +76,7 @@ gh auth login
 MAKE SURE TO replace `YOUR FULL NAME` and `YOUR EMAIL ADDRESS` with the same username and email from Your GitHub Account
 
 ```
-git config --global user.name 'YOUR FULL NAME'
+git config --global user.name 'put your github username here'
 ```
 - Note: replace YOUR FULL NAME with your github username and copy it inside ubuntu
 ```
