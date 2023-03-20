@@ -73,7 +73,7 @@ gh auth login
 # Git Config
 ### Now you need to connect your github email with your machine, so you can remote and push your work to github
 
-MAKE SURE TO replace `YOUR FULL NAME` and `YOUR EMAIL ADDRESS` with the same username and email from Your GitHub Account
+MAKE SURE TO replace `Github username` and `YOUR EMAIL ADDRESS` with the same username and email from Your GitHub Account
 
 ```
 git config --global user.name 'put your github username here'
