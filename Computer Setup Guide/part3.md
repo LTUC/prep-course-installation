@@ -25,7 +25,7 @@ nvm ls
 node --version
 ```
 - the output should be only the node version 
-- in our case it's `v18.13.0` ( it's ok if you get higher version )
+- in our case it's `v18.15.0` ( it's ok if you get higher version )
 
 <hr>
 
