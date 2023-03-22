@@ -9,7 +9,7 @@
 - Open your terminal, and run this command to install the Postgres client and server
 
 ```
-brew install postgresql
+brew install postgresql@14
 ```
 
 - it will take some time to complete ( about 6 mins )
