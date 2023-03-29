@@ -17,19 +17,6 @@
 - Then, Close your terminal or ubuntu to take effect and run ubuntu again
 - in order to run the VSCode using ubuntu, we need to create a Demo project for testsing.
 
-## To create a project follow these steps:
-- from your UBUNTU run these commands:
-```
-mkdir Demo
-cd Demo
-```
-then
-```
-code .
-```
-- when you hit `code .` you should see downloading... then your `VSCode` should be opened inside your current directory
-- Note: if you see a `TRUST PROJECT` message please click trust and check the always trust box.
-
 <hr>
 
 # usefull extension for Visual studio code:
@@ -42,6 +29,19 @@ code .
 ## How to install VSCODE extensions ( check the image below )
 - Click on the extensions icon from the left side and search for the mentioned extentions above and install them.
 <br> <p align="center"> <kbd> <img height="400px" width="480px" src="images/extensions.png" alt=""></kbd></p>
+
+## To create a project follow these steps:
+- from your UBUNTU run these commands:
+```
+mkdir Demo
+cd Demo
+```
+then
+```
+code .
+```
+- when you hit `code .` you should see downloading... then your `VSCode` should be opened inside your current directory
+- Note: if you see a `TRUST PROJECT` message please click trust and check the always trust box.
 
 ### Finally, let's make sure that everything is done as it should be:
 - run the following commands
