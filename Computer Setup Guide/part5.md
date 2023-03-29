@@ -59,7 +59,7 @@ psql
 - You should see something similar to the following:
 
 ```
-psql (14.2) // or higher version
+psql (14.7) // or higher version
 Type "help" for help.
 yournamehere=#
 Type \q to exit the postgres client application and return to your bash shell.
