@@ -15,7 +15,6 @@
 <br> <p align="center"><kbd> <img height="400px" width="480px" src="images/vscode.png" alt=""></kbd> </p>
 
 - Then, Close your terminal or ubuntu to take effect and run ubuntu again
-- in order to run the VSCode using ubuntu, we need to create a Demo project for testsing.
 
 <hr>
 
@@ -30,8 +29,9 @@
 - Click on the extensions icon from the left side and search for the mentioned extentions above and install them.
 <br> <p align="center"> <kbd> <img height="400px" width="480px" src="images/extensions.png" alt=""></kbd></p>
 
+- in order to run the VSCode using ubuntu, it is a good idea to create a Demo project for testsing.
 ## To create a project follow these steps:
-- from your UBUNTU run these commands:
+- from your UBUNTU run these commands: ( make sure 'wsl' extention is installed in VSCode )
 ```
 mkdir Demo
 cd Demo
@@ -49,14 +49,14 @@ code .
 code --version
 ```
 - you should get a result similar to this 
-`1.74.3
+`1.76.2
 899d4837hc95423fb7e10jnskjd52050e30ba3
 x64`
 - let's check the node version
 ```
 node --version
 ```
-- you should get a result like this `v18.13.0` or higher
+- you should get a result like this `v18.15.0` or higher
 - let's check the NPM version 
 ```
 npm --version
