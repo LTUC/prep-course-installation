@@ -69,7 +69,7 @@ Type \q to exit the postgres client application and return to your bash shell.
 
 ## if you are a Linux User no need to start the server, it will be done automatically
 
-On Linux, postgres can be setup to automatically start when your system reboots, so you do not have to run pgstart every time. To set this up, refer to the Postgres Server Documentation and follow the appropriate instructions for your Linux version to have postgres auto-start as a service.
+On Linux, postgres can be setup to automatically start when your system reboots, so you do not have to run sqlstart every time. To set this up, refer to the Postgres Server Documentation and follow the appropriate instructions for your Linux version to have postgres auto-start as a service.
 
 ---
 
