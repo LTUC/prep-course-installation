@@ -34,7 +34,7 @@ echo 'alias sqlstop="pg_ctl -D /home/linuxbrew/.linuxbrew/var/postgresql@14 stop
 `close Ubuntu and run it again`
 
 - now you can easily start the server using this short command <br>
-  ` sqlstart` >>> this command will start the server <br>
+  ` sqlstart` >>> this command will start the server ( already started ) <br>
   ` sqlstop` >>> this command will stop the server
 
 ---
