@@ -1,6 +1,6 @@
 # Part 3
 # How to install node:
-### we will install Node.js using nvm ( Node Version Manager )
+### we will install Node.js using nvm
 - run this command to install Node Version Manager: ( it will take up to ~ <img height="40px" width="30px" src="images/Time.png" alt="update your windows now"> 6 mins)
 
 ```
@@ -8,7 +8,7 @@ brew install nvm
 ```
 - once it's done, we need to `CLOSE UBUNTU` and re-open it again in order to take effect
 
-- Now run this command to install Node: ( This will install the latest stable version of Node.js) ( it will take up to ~ <img height="40px" width="30px" src="images/Time.png" alt="update your windows now"> 4 mins )
+- Now run this command to install Node: ( it will take up to ~ <img height="40px" width="30px" src="images/Time.png" alt="update your windows now"> 4 mins )
 
 ```
 nvm install --lts
