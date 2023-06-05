@@ -31,10 +31,6 @@
 * `Windows Subsystem for Linux`
 * `Hyper-V` (if exist)
 
-### Not important ( just in case ):
-#### if you want to run ubuntu inside a virtual machine ( virtualbox, vmware, etc ) then you need to enable extra service:
-* `Containers`
-
 
 - once you enabled the services click ok and then you are required to RESTART your machine in order to take effect.
 
@@ -147,12 +143,10 @@ mv ~/.profile .profile.bak
                                         
 - Now run this command in `Ubuntu`
 ```
-curl -s https://raw.githubusercontent.com/omarXzain/LTUC-ASAC/main/.profile >> ~/.profile
+curl -s https://raw.githubusercontent.com/omarXzain/programming-installation-guide/main/Computer%20setup%20guide/images/.profile >> ~/.profile
 ```
 
 - Once it finishes, `COMPLETLY CLOSE UBUNTU` then re-open it again. 
-- Your Ubuntu appearance should be changed to a different set of colors and cool features
-&nbsp;&nbsp;<kbd>![wslLV](images/newubuntu.png)</kbd>
 
 <hr>
 
