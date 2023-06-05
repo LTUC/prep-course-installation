@@ -68,7 +68,7 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 - this will enable Virtual Machine Platform for WSL, if it ask for a restart then restart your machine to continue
 
 ---------------------------------------------
-### Now you need to install windows subsytem Linux ( used to run the Linux environment on windows )
+### Now you need to install windows subsytem Linux 
 <h3 align="center">  click on the icon below to download it directly</h3>
 <p align="center"> <kbd><a href="https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi"> <img height="250px" width="250px" src="images/subsystemLinux.png" alt="WinsubsystemLinux"></a></kbd>
 <h3 align="center">windows subsystem linux</h3>
@@ -117,7 +117,7 @@ wsl --set-default-version 2
 - set your password twice to verify it: ( make sure to memorize it ) `hint: use 1234 or 0000`
 <br>
 
-- open `Windows Terminal` and run this command ( this to check UBUNTU if it's running with WSL version 2 )
+- open `Windows Terminal` and run this command
 ```
 wsl -l -v 
 ``` 
@@ -174,7 +174,7 @@ source ~/.profile
 ```
 sudo apt-get update
 ```
-- put your password, when prompted ( because we are using sudo )
+- put your password, when prompted
 - once it's done, run this command: ( it will take up to ~ <img height="40px" width="30px" src="images/Time.png" alt="sudo apt-get upgrade"> 13 mins )
 ```
 sudo apt-get upgrade
