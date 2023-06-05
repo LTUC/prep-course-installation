@@ -137,7 +137,11 @@ mv ~/.bashrc .bashrc.bak
 mv ~/.profile .profile.bak
 ```
 
-- you should not get any output ( it's just for backup .profile & .bashrc)
+```
+mv ~/..bash_history .bash_history.bak
+```
+
+- you should not get any output you can continue normally
 
 <hr>
                                         
